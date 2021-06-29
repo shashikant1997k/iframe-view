@@ -65,25 +65,43 @@ function Header({ searchInput }) {
       <div className="header">
         <div className="username">{user.name}</div>
         <div className="inputDiv">
-          <input
-            type="text"
-            className="form-control"
-            name="input1"
-            onChange={handleInput}
-            value={inp.input1}
-            placeholder="http://www.example.com"
-            onKeyDown={handleInput1KeyPress}
-          />
+          <div className="inputDiv1">
+            <input
+              type="text"
+              className="form-control"
+              name="input1"
+              onChange={handleInput}
+              value={inp.input1}
+              placeholder="http://www.example.com"
+              onKeyDown={handleInput1KeyPress}
+            />
+            <button
+              onClick={onHitEnter}
+              type="button"
+              className="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
 
-          <input
-            type="text"
-            className="form-control"
-            name="input2"
-            onChange={handleInput}
-            value={inp.input2}
-            placeholder="http://www.example.com"
-            onKeyDown={handleInput2KeyPress}
-          />
+          <div className="inputDiv2">
+            <input
+              type="text"
+              className="form-control"
+              name="input2"
+              onChange={handleInput}
+              value={inp.input2}
+              placeholder="http://www.example.com"
+              onKeyDown={handleInput2KeyPress}
+            />
+            <button
+              onClick={onHitEnter}
+              type="button"
+              className="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
         </div>
 
         <div className="logout__button">
