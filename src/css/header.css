@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  background: #ffffff;
+  height: 60px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0px 30px;
+  flex-direction: row;
+}
+
+.username {
+  display: flex;
+  margin-right: 15px;
+  font-size: 1.2em;
+  font-weight: 500;
+  flex: 0.15;
+  justify-content: flex-start;
+}
+
+.logout__button {
+  display: flex;
+  flex: 0.15;
+  justify-content: flex-end;
+}
+
+.logout__button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 0.7;
+}
+
+.inputDiv input {
+  margin: 0px 10px;
+}
+
+.mob {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 0px 5px;
+  }
+  .mob {
+    display: block;
+  }
+  .desk {
+    display: none;
+  }
+
+  .logout__button button {
+    background: white;
+    padding: 1px 5px 2px;
+  }
+
+  .username {
+    flex: 0.1;
+  }
+  .logout__button {
+    flex: 0.05;
+  }
+
+  .inputDiv {
+    flex: 0.85;
+  }
+}

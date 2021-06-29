@@ -1,0 +1,13 @@
+.iframe__div {
+  /* width: 95%; */
+  /* padding: 20px 10px 0px; */
+}
+
+.iframes {
+  height: 80vh;
+  padding: 5px 10px;
+  background: #fff;
+  box-shadow: 0 5px 12px 0 rgb(0 0 0 / 11%), 0 0 1px 0 rgb(0 0 0 / 10%);
+  transition: 0.25s;
+  border-radius: 4px;
+}
